@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20.196" height="35.904" viewBox="0 0 20.196 35.904">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="LSAA_View_3" data-name="LSAA View 3" d="M0,0H35.9V20.2H0Z" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_3" data-name="Mask Group 3" transform="translate(0 35.904) rotate(-90)" clip-path="url(#clip-path)">
+    <g id="up-arrow" transform="translate(9.958)">
+      <g id="Group_3723" data-name="Group 3723" transform="translate(0)">
+        <path id="Path_3194" data-name="Path 3194" d="M128.36,7.7,120.787.124a.436.436,0,0,0-.137-.092.417.417,0,0,0-.321,0,.4.4,0,0,0-.137.092L112.617,7.7a.421.421,0,0,0,.595.595l6.856-6.855V19.775a.421.421,0,1,0,.842,0V1.437l6.855,6.855a.421.421,0,1,0,.6-.595Z" transform="translate(-112.494 0)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>
