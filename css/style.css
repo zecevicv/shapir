@@ -37,6 +37,10 @@ body {
   color: #117A8C;
 }
 
+.text-orange {
+  color: #FF6C0E;
+}
+
 /* #Header
 ================================================== */
 .header {
@@ -231,7 +235,7 @@ body {
     margin-left: 3.2vw;
   }
   
-  .social-icons img {
+  .social-icons svg {
     width: 7.7vw;
   }
 }
@@ -332,14 +336,21 @@ body {
 
 .banner .text {
   position: absolute;
+  top: 50%;
+  right: 7.44vw;
+  z-index: 50;
+  color: white;
+  width: 39.84vw;
+  transform: translateY(-50%);
+}
+
+.banner.banner-slider .text {
   width: 43.43vw;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 50;
   text-align: center;
-  color: white;
-}
+  transform: translate(-50%, -50%);
+} 
 
 .banner .text p {
   margin-bottom: 2.86vw;
@@ -347,7 +358,7 @@ body {
 
 .banner-scroll {
   position: absolute;
-  top: 47%;
+  top: 45%;
   left: 1.66vw;
   z-index: 50;
   color: white;
@@ -367,9 +378,9 @@ body {
   transform: rotate(-90deg) translateY(-50%) translateX(50%);
 }
 
-.banner-slider .swiper-container,
-.banner-slider .swiper-container .img img,
-.banner-slider .swiper-container .img picture {
+.banner,
+.banner .img img,
+.banner .img picture {
   width: 100%;
 }
 
@@ -395,9 +406,12 @@ body {
   }
 
   .banner .text {
-    width: 87%;
-    top: 27.6vw;
-    transform: translateX(-50%);
+    width: 87%!important;
+    top: 27.6vw!important;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%)!important;
+    text-align: center;
   }
   
   .banner .text p {
@@ -977,15 +991,6 @@ body {
   margin-top: 2.6vw;
 }
 
-.home-career .text.bottom {
-  text-align: center;
-  margin-bottom: 7.44vw;
-}
-
-.home-career .text.bottom h2 {
-  margin-bottom: 3.125vw;
-}
-
 @media (max-width: 1023.98px) {
   .home-career {
     overflow: hidden;
@@ -999,14 +1004,27 @@ body {
   .home-career .text.top .btn {
     margin-top: 8vw;
   }
-  
-  .home-career .text.bottom {
+}
+
+/* #Contact
+================================================== */
+.contact {
+  text-align: center;
+  margin-bottom: 7.44vw;
+}
+
+.contact h2 {
+  margin-bottom: 3.125vw;
+}
+
+@media (max-width: 1023.98px) {
+  .contact {
     width: 66%;
     margin: 0 auto;
     margin-bottom: 26.6vw;
   }
   
-  .home-career .text.bottom h2 {
+  .contact h2 {
     margin-bottom: 8vw;
   }
 }
@@ -1311,5 +1329,123 @@ body {
   .home-career .persons {
     margin-bottom: 20vw;
     transform: scale(1.5);
+  }
+}
+
+/* #Press Articles
+================================================== */
+.press-articles {
+  margin: 11.56vw 0 7.8vw 0;
+}
+
+.press-articles .container {
+  width: 85%;
+}
+
+.press-articles ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -1.5vw;
+}
+
+.press-articles li {
+  flex: 0 0 33.333333%;
+  padding: 1.5vw;
+}
+
+.press-articles li > div {
+  border-radius: 1vw;
+  overflow: hidden;
+  box-shadow: 0 3px 24px rgba(0, 0, 0, .1);
+}
+
+.press-articles .img img {
+  width: 100%;
+  height: 9.68vw;
+  object-fit: cover;
+  object-position: center;
+}
+
+.press-articles .text {
+  padding: 1.3vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.press-articles .text p {
+  margin-bottom: .5vw;
+}
+
+.press-articles .text h3 {
+  margin-bottom: 1vw;
+}
+
+.press-articles .text a {
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #FF6C0E;
+  padding-bottom: .25vw;
+}
+
+.press-articles .text a img {
+  width: 1.04vw;
+  margin-right: .5vw;
+}
+
+@media (max-width: 1023.98px) {
+  .press-articles {
+    margin: 16vw 0;
+  }
+  
+  .press-articles .container {
+    width: 88%;
+  }
+
+  .press-articles ul {
+    display: block;
+    margin: 0;
+  }
+  
+  .press-articles li {
+    padding: 0;
+  }
+
+  .press-articles li:not(:last-child) {
+    margin-bottom: 6vw;
+  }
+  
+  .press-articles li > div {
+    border-radius: 2.66vw;
+  }
+  
+  .press-articles .img img {
+    height: 30.4vw;
+  }
+  
+  .press-articles .text {
+    padding: 4.4vw;
+  }
+  
+  .press-articles .text p {
+    margin-bottom: 1.6vw;
+  }
+  
+  .press-articles .text h3 {
+    margin-bottom: 2vw;
+  }
+  
+  .press-articles .text a {
+    padding-bottom: 1vw;
+  }
+  
+  .press-articles .text a img {
+    width: 3.45vw;
+    margin-right: 1.33vw;
+  }
+
+  .press-articles .load-more {
+    margin-top: 10.4vw;
+    text-align: center;
   }
 }
