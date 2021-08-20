@@ -986,137 +986,14 @@ body {
   margin-bottom: 3.125vw;
 }
 
-.home-career .persons {
-  height: 37.8vw;
-  overflow: hidden;
-  margin-bottom: 7.8vw;
-}
-
-.home-career .person {
-  mask-size: 100%;
-  -webkit-mask-size: 100%;
-  mask-repeat: no-repeat;
-  -webkit-mask-repeat: no-repeat;
-  mask-position: center;
-  -webkit-mask-position: center;
-}
-
-.home-career .person:nth-child(1) {
-  width: 11.81vw;
-  height: 8.43vw;
-  mask-image: url('../img/home/person-1-mask.svg');
-  -webkit-mask-image: url('../img/home/person-1-mask.svg');
-}
-
-.home-career .person:nth-child(2) {
-  width: 11.77vw;
-  height: 8.43vw;
-  mask-image: url('../img/home/person-2-mask.svg');
-  -webkit-mask-image: url('../img/home/person-2-mask.svg');
-}
-
-.home-career .person:nth-child(3) {
-  width: 17.2vw;
-  height: 14vw;
-  mask-image: url('../img/home/person-3-mask.svg');
-  -webkit-mask-image: url('../img/home/person-3-mask.svg');
-}
-
-.home-career .person:nth-child(4) {
-  width: 11.62vw;
-  height: 13.98vw;
-  mask-image: url('../img/home/person-4-mask.svg');
-  -webkit-mask-image: url('../img/home/person-4-mask.svg');
-}
-
-.home-career .person:nth-child(5) {
-  width: 13.98vw;
-  height: 8.43vw;
-  mask-image: url('../img/home/person-5-mask.svg');
-  -webkit-mask-image: url('../img/home/person-5-mask.svg');
-}
-
-.home-career .person:nth-child(6) {
-  width: 11.77vw;
-  height: 8.43vw;
-  mask-image: url('../img/home/person-6-mask.svg');
-  -webkit-mask-image: url('../img/home/person-6-mask.svg');
-}
-
-.home-career .person:nth-child(7) {
-  width: 17.15vw;
-  height: 13.98vw;
-  mask-image: url('../img/home/person-7-mask.svg');
-  -webkit-mask-image: url('../img/home/person-7-mask.svg');
-}
-
-.home-career .person:nth-child(8) {
-  width: 12.71vw;
-  height: 15.61vw;
-  mask-image: url('../img/home/person-8-mask.svg');
-  -webkit-mask-image: url('../img/home/person-8-mask.svg');
-}
-
-.home-career .person:nth-child(9) {
-  width: 12.64vw;
-  height: 13.17vw;
-  mask-image: url('../img/home/person-9-mask.svg');
-  -webkit-mask-image: url('../img/home/person-9-mask.svg');
-}
-
-.home-career .person:nth-child(10) {
-  width: 12.71vw;
-  height: 11.59vw;
-  mask-image: url('../img/home/person-10-mask.svg');
-  -webkit-mask-image: url('../img/home/person-10-mask.svg');
-}
-
-.home-career .person:nth-child(11) {
-  width: 12.71vw;
-  height: 10vw;
-  mask-image: url('../img/home/person-11-mask.svg');
-  -webkit-mask-image: url('../img/home/person-11-mask.svg');
-}
-
-.home-career .person:nth-child(12) {
-  width: 12.71vw;
-  height: 15.61vw;
-  mask-image: url('../img/home/person-12-mask.svg');
-  -webkit-mask-image: url('../img/home/person-12-mask.svg');
-}
-
-.home-career .person:nth-child(13) {
-  width: 12.71vw;
-  height: 13.6vw;
-  mask-image: url('../img/home/person-13-mask.svg');
-  -webkit-mask-image: url('../img/home/person-13-mask.svg');
-}
-
-.home-career .person:nth-child(14) {
-  width: 13.61vw;
-  height: 9.72vw;
-  mask-image: url('../img/home/person-14-mask.svg');
-  -webkit-mask-image: url('../img/home/person-14-mask.svg');
-}
-
-.home-career .person:nth-child(15) {
-  width: 13.63vw;
-  height: 12.42vw;
-  mask-image: url('../img/home/person-15-mask.svg');
-  -webkit-mask-image: url('../img/home/person-15-mask.svg');
-}
-
-.home-career .person img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
 @media (max-width: 1023.98px) {
+  .home-career {
+    overflow: hidden;
+  }
+
   .home-career .text.top {
     width: 84%;
-    margin-bottom: 10vw;
+    margin-bottom: 20vw;
   }
   
   .home-career .text.top .btn {
@@ -1131,11 +1008,6 @@ body {
   
   .home-career .text.bottom h2 {
     margin-bottom: 8vw;
-  }
-  
-  .home-career .persons {
-    height: 69.86vw;
-    margin-bottom: 20vw;
   }
 }
 
@@ -1264,5 +1136,180 @@ body {
 
   .footer .collapse > div {
     padding-bottom: 1.5vw;
+  }
+}
+
+/* #Persons
+================================================== */
+.home-career .persons {
+  height: 37.8vw;
+  overflow: hidden;
+  margin-bottom: 7.8vw;
+  position: relative;
+  width: 100%;
+}
+
+.home-career .person {
+  mask-size: 100%;
+  -webkit-mask-size: 100%;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-position: center;
+  position: absolute;
+  right: 0;
+  transform: translateX(18vw);  
+  backface-visibility: hidden;
+
+  animation: move 20s linear infinite;
+}
+
+.home-career .person:nth-child(1) {
+  width: 11.81vw;
+  height: 8.43vw;
+  mask-image: url('../img/home/person-1-mask.svg');
+  -webkit-mask-image: url('../img/home/person-1-mask.svg');
+  top: 14vw;
+}
+
+.home-career .person:nth-child(2) {
+  width: 11.77vw;
+  height: 8.43vw;
+  mask-image: url('../img/home/person-2-mask.svg');
+  -webkit-mask-image: url('../img/home/person-2-mask.svg');
+  top: 23.82vw;
+}
+
+.home-career .person:nth-child(3) {
+  width: 17.2vw;
+  height: 14vw;
+  mask-image: url('../img/home/person-3-mask.svg');
+  -webkit-mask-image: url('../img/home/person-3-mask.svg');
+  top: 8.43vw;
+}
+
+.home-career .person:nth-child(4) {
+  width: 11.62vw;
+  height: 13.98vw;
+  mask-image: url('../img/home/person-4-mask.svg');
+  -webkit-mask-image: url('../img/home/person-4-mask.svg');
+  top: 23.8vw;
+}
+
+.home-career .person:nth-child(5) {
+  width: 11.81vw;
+  height: 8.43vw;
+  mask-image: url('../img/home/person-5-mask.svg');
+  -webkit-mask-image: url('../img/home/person-5-mask.svg');
+  top: 4.21vw;
+}
+
+.home-career .person:nth-child(6) {
+  width: 11.77vw;
+  height: 8.43vw;
+  mask-image: url('../img/home/person-6-mask.svg');
+  -webkit-mask-image: url('../img/home/person-6-mask.svg');
+  top: 14vw;
+}
+
+.home-career .person:nth-child(7) {
+  width: 17.15vw;
+  height: 13.98vw;
+  mask-image: url('../img/home/person-7-mask.svg');
+  -webkit-mask-image: url('../img/home/person-7-mask.svg');
+  top: 23.8vw;
+}
+
+.home-career .person:nth-child(8) {
+  width: 12.71vw;
+  height: 15.61vw;
+  mask-image: url('../img/home/person-8-mask.svg');
+  -webkit-mask-image: url('../img/home/person-8-mask.svg');
+  top: 2vw;
+}
+
+.home-career .person:nth-child(9) {
+  width: 12.64vw;
+  height: 13.17vw;
+  mask-image: url('../img/home/person-9-mask.svg');
+  -webkit-mask-image: url('../img/home/person-9-mask.svg');
+  top: 18.4vw;
+}
+
+.home-career .person:nth-child(10) {
+  width: 12.71vw;
+  height: 11.59vw;
+  mask-image: url('../img/home/person-10-mask.svg');
+  -webkit-mask-image: url('../img/home/person-10-mask.svg');
+  top: 0;
+}
+
+.home-career .person:nth-child(11) {
+  width: 12.71vw;
+  height: 10vw;
+  mask-image: url('../img/home/person-11-mask.svg');
+  -webkit-mask-image: url('../img/home/person-11-mask.svg');
+  top: 13.33vw;
+}
+
+.home-career .person:nth-child(12) {
+  width: 12.71vw;
+  height: 15.61vw;
+  mask-image: url('../img/home/person-12-mask.svg');
+  -webkit-mask-image: url('../img/home/person-12-mask.svg');
+  top: 5.8vw;
+}
+
+.home-career .person:nth-child(13) {
+  width: 12.71vw;
+  height: 13.6vw;
+  mask-image: url('../img/home/person-13-mask.svg');
+  -webkit-mask-image: url('../img/home/person-13-mask.svg');
+  top: 22.39vw;
+}
+
+.home-career .person:nth-child(14) {
+  width: 13.61vw;
+  height: 9.72vw;
+  mask-image: url('../img/home/person-14-mask.svg');
+  -webkit-mask-image: url('../img/home/person-14-mask.svg');
+  top: 8.65vw;
+}
+
+.home-career .person:nth-child(15) {
+  width: 13.63vw;
+  height: 12.42vw;
+  mask-image: url('../img/home/person-15-mask.svg');
+  -webkit-mask-image: url('../img/home/person-15-mask.svg');
+  top: 19.37vw;
+}
+
+.home-career .person:nth-child(13),
+.home-career .person:nth-child(12) { animation-delay: 2.65s; }
+.home-career .person:nth-child(11),
+.home-career .person:nth-child(10) { animation-delay: 5.25s; }
+.home-career .person:nth-child(9),
+.home-career .person:nth-child(8) { animation-delay: 7.9s; }
+.home-career .person:nth-child(7) { animation-delay: 11.4s; }
+.home-career .person:nth-child(6) { animation-delay: 10.5s; }
+.home-career .person:nth-child(5) { animation-delay: 10.5s; }
+.home-career .person:nth-child(4) { animation-delay: 13.9s; }
+.home-career .person:nth-child(3) { animation-delay: 13.9s; }
+.home-career .person:nth-child(2),
+.home-career .person:nth-child(1) { animation-delay: 16.5s; }
+
+.home-career .person img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@keyframes move { to { transform: translateX(-100vw); } }
+
+@media (max-width: 1023.98px) {
+  .home-career .persons {
+    margin-bottom: 20vw;
+    transform: scale(1.5);
   }
 }

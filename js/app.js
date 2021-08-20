@@ -56,8 +56,6 @@ if (document.querySelector('.home-projects .swiper-container')) {
   ======================================================= */
 const homeNumbers = document.querySelectorAll('.home-numbers .num');
 
-console.log(homeNumbers);
-
 homeNumbers.forEach((num) => {
   gsap.from(num, {
     delay: 2, 
