@@ -1,0 +1,14 @@
+<svg id="Component_1_20" data-name="Component 1 – 20" xmlns="http://www.w3.org/2000/svg" width="364" height="448" viewBox="0 0 364 448">
+  <path id="Rectangle_301" data-name="Rectangle 301" d="M0,0H364a0,0,0,0,1,0,0V170a20,20,0,0,1-20,20H20A20,20,0,0,1,0,170V0A0,0,0,0,1,0,0Z" transform="translate(0 258)"/>
+  <text id="נמל_אשדוד" data-name="נמל אשדוד" transform="translate(25 310.424)" font-size="22" font-family="OEDooPro-Medium, OE Doo Pro" font-weight="500"><tspan x="212.13" y="22">נמל אשדוד</tspan></text>
+  <text id="הנדסה_ותשתיות" data-name="הנדסה ותשתיות" transform="translate(287 294.835)" font-size="16" font-family="OEDooPro-Regular, OE Doo Pro"><tspan x="-51.28" y="0">הנדסה ותשתיות</tspan></text>
+  <path id="_18" data-name="18" d="M-267.792,321.83v-197.9c0-16.581-9.943-27.753-30.016-30.021L-601.771,63.884a30.022,30.022,0,0,0-30.021,30.021V321.83Z" transform="translate(631.792 -63.884)"/>
+  <g id="Group_4058" data-name="Group 4058" transform="translate(0 -3)">
+    <text id="סיום_משוער:_2020" data-name="סיום משוער: 2020" transform="translate(270 417)" font-size="18" font-family="OEDooPro-Regular, OE Doo Pro"><tspan x="-70.002" y="0">2020</tspan><tspan y="0"> </tspan><tspan y="0" font-family="OEDooPro-Medium, OE Doo Pro" font-weight="500">סיום משוער:</tspan></text>
+    <g id="up-arrow" transform="translate(25 417.989) rotate(-90)">
+      <g id="Group_3723" data-name="Group 3723" transform="translate(0)">
+        <path id="Path_3194" data-name="Path 3194" d="M128.36,7.7,120.787.124a.436.436,0,0,0-.137-.092.417.417,0,0,0-.321,0,.4.4,0,0,0-.137.092L112.617,7.7a.421.421,0,0,0,.595.595l6.856-6.855V19.775a.421.421,0,1,0,.842,0V1.437l6.855,6.855a.421.421,0,1,0,.6-.595Z" transform="translate(-112.494 0)" stroke="#000" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>
