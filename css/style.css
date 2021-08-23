@@ -1620,12 +1620,12 @@ body {
   margin: -1.5625vw;
 }
 
-.category-list li {
+.project-card {
   flex: 0 0 25%;
   padding: 1.5625vw;
 }
 
-.category-list li > div {
+.project-card > div {
   mask-image: url('../img/category/category-mask.svg');
   -webkit-mask-image: url('../img/category/category-mask.svg');
   mask-size: 100%;
@@ -1637,27 +1637,27 @@ body {
   height: 23.33vw;
 }
 
-.category-list .img img {
+.project-card .img img {
   width: 100%;
   height: 13.43vw;
   object-fit: cover;
   object-position: center;
 }
 
-.category-list .text {
+.project-card .text {
   padding: 1.04vw 1.3vw 1.3vw 1.3vw;
 }
 
-.category-list .text h3 {
+.project-card .text h3 {
   margin-bottom: 2.6vw;
 }
 
-.category-list .text a {
+.project-card .text a {
   display: flex;
   justify-content: space-between;
 }
 
-.category-list .text a img {
+.project-card .text a img {
   width: 1.04vw;
 }
 
@@ -1749,33 +1749,33 @@ body {
     margin: 0;
   }
   
-  .category-list li {
+  .project-card {
     padding: 0;
   }
 
-  .category-list li:not(:last-child) {
+  .project-card:not(:last-child) {
     margin-bottom: 6vw;
   }
   
-  .category-list li > div {
+  .project-card > div {
     mask-image: url('../img/category/category-mask-mobile.svg');
     -webkit-mask-image: url('../img/category/category-mask-mobile.svg');
     height: 72.666vw;
   }
 
-  .category-list .img img {
+  .project-card .img img {
     height: 45.65vw;
   }
   
-  .category-list .text {
+  .project-card .text {
     padding: 4.66vw 6vw;
   }
   
-  .category-list .text h3 {
+  .project-card .text h3 {
     margin-bottom: 2vw;
   }
   
-  .category-list .text a img {
+  .project-card .text a img {
     width: 4.93vw;
   }
   
