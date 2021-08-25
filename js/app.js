@@ -58,8 +58,8 @@ const homeNumbers = document.querySelectorAll('.home-numbers .num');
 
 homeNumbers.forEach((num) => {
   gsap.from(num, {
-    delay: 2,
-    duration: 2.5,
+    delay: 1,
+    duration: 5,
     innerHTML: 0,
     snap: {
       innerHTML: 1
@@ -182,3 +182,12 @@ if (popupBackdrops) {
     })
   });
 }
+
+/* #AOS Animations
+    ======================================================= */
+AOS.init({
+  startEvent: 'load',
+  once: true,
+  duration: 800,
+  offset: 300,
+});
