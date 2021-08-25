@@ -126,3 +126,59 @@ if (document.querySelector('.job-posts .swiper-container')) {
     }
   });
 }
+
+/* #Popup
+  ======================================================= */
+const body = document.querySelector('body');
+const popups = document.querySelectorAll('.popup');
+const popupTogglers = document.querySelectorAll('.popup-toggler');
+const popupClosers = document.querySelectorAll('.popup-close');
+const popupBackdrops = document.querySelectorAll('.popup-backdrop');
+
+if (popups && popupTogglers) {
+  popups.forEach((popup) => {
+    gsap.set(popup, {
+      display: 'block'
+    });
+  });
+
+  popupTogglers.forEach((toggler) => {
+
+    toggler.addEventListener('click', (e) => {
+      e.preventDefault();
+
+      const popup = document.querySelector(toggler.dataset.popup);
+
+      body.classList.add('no-scroll');
+      popup.classList.add('show');
+    });
+  });
+}
+
+if (popupClosers) {
+  popupClosers.forEach((closer) => {
+    closer.addEventListener('click', (e) => {
+      e.preventDefault();
+
+      const popup = closer.closest('.popup');
+
+      body.classList.remove('no-scroll');
+      popup.classList.remove('show');
+
+    })
+  });
+}
+
+if (popupBackdrops) {
+  popupBackdrops.forEach((backdrop) => {
+    backdrop.addEventListener('click', (e) => {
+      e.preventDefault();
+
+      const popup = backdrop.closest('.popup');
+
+      body.classList.remove('no-scroll');
+      popup.classList.remove('show');
+
+    })
+  });
+}

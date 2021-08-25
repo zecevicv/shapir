@@ -2919,3 +2919,175 @@ body {
     left: 0;
   }
 }
+
+/* #Popup
+================================================== */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+  transition: all .5s ease;
+}
+
+.popup.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup-backdrop {
+  background-color: rgba(0,0,0,.69);
+  width: 100%;
+  height: 100%;
+}
+
+.popup-content {
+  border-radius: 1vw;
+  padding: 2.35vw 3.65vw;
+  width: 48%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  transition: all 1s ease;
+}
+
+.popup h2 {
+  margin-bottom: 1.82vw;
+}
+
+.popup form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.popup .form-group.input {
+  flex: 0 0 18vw;
+  margin-bottom: 1.82vw;
+}
+
+.popup .form-group.textarea {
+  flex: 0 0 100%;
+  margin-bottom: 2vw;
+}
+
+.popup .form-group.bottom {
+  flex: 0 0 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.popup .form-group.bottom a.download-link {
+  display: flex;
+  align-items: center;
+}
+
+.popup .form-group.bottom a.download-link img {
+  width: 1.71vw;
+  margin-right: .9vw;
+}
+
+.popup input {
+  border: none;
+  border-bottom: 1px solid #117A8C;
+}
+
+.popup label {
+  display: block;
+}
+
+.popup textarea {
+  border: 1px solid #117A8C;
+  resize: none;
+  padding: .5vw;
+}
+
+.popup input,
+.popup input::placeholder,
+.popup label,
+.popup textarea {
+  font-size: 1.04vw;
+  color: #242424;
+  width: 100%;
+  padding-bottom: .5vw;
+}
+
+.popup-close {
+  width: 1.2vw;
+  position: absolute;
+  top: 2.35vw;
+  left: 3.65vw;
+}
+
+@media (max-width: 1023.98px) {
+  .popup-content {
+    padding: 0;
+    border-radius: 2.66vw;
+    padding: 13.3vw 4.6vw 8vw 4.6vw;
+    width: 80%;
+  }
+
+  .popup h2 {
+    margin-bottom: 7.33vw;
+  }
+  
+  .popup form {
+    display: block;
+  }
+  
+  .popup .form-group.input {
+    margin-bottom: 3.73vw;
+  }
+  
+  .popup .form-group.textarea {
+    margin-bottom: 11vw;
+    margin-top: 6vw;
+  }
+  
+  .popup .form-group.bottom {
+    display: block;
+  }
+  
+  .popup .form-group.bottom a.download-link {
+    margin-bottom: 8vw;
+  }
+  
+  .popup .form-group.bottom a.download-link img {
+    width: 6.25vw;
+    margin-right: 1vw;
+  }
+  
+  .popup textarea {
+    padding: 2vw;
+  }
+  
+  .popup input,
+  .popup input::placeholder,
+  .popup label,
+  .popup textarea {
+    font-size: 3.73vw;
+    padding-bottom: 2vw;
+  }
+  
+  .popup-close {
+    width: 1.2vw;
+    position: absolute;
+    top: 2.35vw;
+    left: 3.65vw;
+  }
+
+  .popup-close {
+    width: 4vw;
+    top: 4vw;
+    left: 4vw;
+  }
+}
