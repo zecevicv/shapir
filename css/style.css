@@ -2461,6 +2461,95 @@ body {
   margin-bottom: .75vw;
 }
 
+.jobs-accordion .select-form {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.34vw;
+}
+
+.jobs-accordion select {
+  width: 18.22vw;
+  height: 3.125vw;
+  border-radius: 500px;
+  border: 1px solid #E5E5E5;
+  font-size: 1.04vw;
+  font-weight: 700;
+  padding: 0 1.3vw;
+  appearance: none;
+  background-image: url('../img/icons/chevron-down-blue.svg');
+  background-size: 1vw .57vw;
+  background-repeat: no-repeat;
+  background-position: 1.15vw 50%;
+}
+
+.jobs-accordion .reset {
+  text-align: left;
+  margin-top: 1.3vw;
+  text-decoration: underline;
+}
+
+.jobs-page .jobs-accordion .container {
+  width: 85%;
+}
+
+.jobs-page .jobs-accordion .search,
+.jobs-page .jobs-accordion .accordion {
+  width: 73.7%;
+  margin: 0 auto;
+}
+
+.jobs-page h3 {
+  text-align: center;
+  margin-bottom: 2.35vw;
+  margin-top: 3.125vw;
+}
+
+.jobs-page .img {
+  margin-bottom: -2.11vw;
+}
+
+.jobs-page .img,
+.jobs-page .img img,
+.jobs-page .img picture {
+  width: 100%;
+}
+
+.jobs-page .search-form {
+  display: flex;
+  background-color: white;
+  overflow: hidden;
+  height: 4.21vw;
+  border-radius: 1.5vw;
+  box-shadow: 0 3px 24px rgba(0, 0, 0, .1);
+  position: relative;
+  z-index: 10;
+}
+
+.jobs-page .search-form img {
+  width: 1.66vw;
+  margin: 0 1.3vw 0 1vw;
+}
+
+.jobs-page .search-form input {
+  flex-grow: 1;
+  border: none;
+  font-size: 1.15vw;
+  font-weight: 500;
+  color: #A8A8A8;
+}
+
+.jobs-page .search-form input::placeholder {
+  color: #A8A8A8;
+}
+
+.jobs-page .search-form button {
+  background-color: #117A8C;
+  border: none;
+  color: white;
+  font-size: 1.56vw;
+  padding: 0 4.16vw;
+}
+
 @media (max-width: 1023.98px) {
   .jobs-accordion .container {
     width: 88%;
@@ -2553,5 +2642,280 @@ body {
   .jobs-accordion .collapse .social p {
     margin-left: 3vw;
     margin-bottom: 0;
+  }
+
+  .jobs-accordion select {
+    width: 27.7vw;
+    height: 8vw;
+    border-radius: 500px;
+    border: 1px solid #E5E5E5;
+    font-size: 3.2vw;
+    font-weight: 700;
+    padding: 0 2.5vw;
+    appearance: none;
+    background-image: url('../img/icons/chevron-down-blue.svg');
+    background-size: 2.62vw 1.498vw;
+    background-repeat: no-repeat;
+    background-position: 2vw 50%;
+  }
+  
+  .jobs-accordion select * {
+    font-size: 3.2vw;
+    font-weight: 700;
+  }
+
+  .jobs-page .jobs-accordion h2 {
+    margin-bottom: 6vw;
+    padding-bottom: 4vw;
+    position: relative;
+  }
+
+  .jobs-page .jobs-accordion h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 3px;
+    width: 14.666vw;
+    background-color: #FF6C0E;
+  }
+
+  .jobs-accordion .select-form {
+    margin-top: 6vw;
+  }
+  
+  .jobs-accordion .reset {
+    margin-top: 3.73vw;
+  }
+  
+  .jobs-page .jobs-accordion .container {
+    width: 88%;
+  }
+  
+  .jobs-page .jobs-accordion .search,
+  .jobs-page .jobs-accordion .accordion {
+    width: 100%;
+  }
+  
+  .jobs-page h3 {
+    margin-bottom: 6.66vw;
+    margin-top: 6.66vw;
+  }
+  
+  .jobs-page .img {
+    margin-bottom: -6.66vw;
+  }
+  
+  .jobs-page .search-form {
+    height: 13.33vw;
+    border-radius: 4vw;
+    width: 89%;
+    margin: 0 auto;
+  }
+  
+  .jobs-page .search-form img {
+    width: 4.26vw;
+    margin: 0 5.33vw 0 2.66vw;
+  }
+  
+  .jobs-page .search-form input {
+    font-size: 3.2vw;
+  }
+  
+  .jobs-page .search-form button {
+    font-size: 4vw;
+    padding: 0 8.4vw;
+  }
+}
+
+/* #Jobs About
+================================================== */
+.jobs-about {
+  padding: 7.8vw 0;
+  position: relative;
+}
+
+.jobs-about .container {
+  width: 85%;
+  display: flex;
+  align-items: center;
+}
+
+.jobs-about .img {
+  flex: 0 0 40.5vw;
+}
+
+.jobs-about .text {
+  padding: 0 4.27vw 0 8.5vw;
+}
+
+.jobs-about .text a {
+  margin-top: 2.85vw;
+}
+
+.jobs-about .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.jobs-about .bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (max-width: 1023.98px) {
+  .jobs-about {
+    padding: 16vw 0 18.66vw 0;
+  }
+  
+  .jobs-about .container {
+    width: 88%;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  
+  .jobs-about .img {
+    flex: 0;
+    margin-bottom: 10.4vw;
+  }
+  
+  .jobs-about .text {
+    padding: 0;
+    text-align: center;
+  }
+  
+  .jobs-about .text a {
+    margin-top: 8.66vw;
+  }
+}
+
+/* #Job Posts
+================================================== */
+.job-posts {
+  margin-bottom: 8.177vw;
+  text-align: center;
+}
+
+.job-posts .container {
+  width: 85%;
+}
+
+.job-posts h2 {
+  margin-bottom: 2.35vw;
+}
+
+.job-posts .swiper-container {
+  margin: 0 -2vw;
+  padding-bottom: 4.7vw;
+}
+
+.job-posts .swiper-slide {
+  padding: 0 2vw;
+}
+
+.job-posts .img {
+  margin-bottom: 2.35vw;
+}
+
+.job-posts .img img {
+  width: 100%;
+  border-radius: 1vw;
+}
+
+.job-posts .swiper-pagination-bullet-active {
+  background: #1898AE;
+}
+
+.job-posts .swiper-arrows .prev {
+  position: absolute;
+  top: 10vw;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 20;
+}
+
+.job-posts .swiper-arrows .next {
+  position: absolute;
+  top: 10vw;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 20;
+}
+
+.job-posts .swiper-arrows img {
+  width: 3.49vw;
+}
+
+.job-posts .swiper-container-horizontal>.swiper-pagination-bullets,
+.job-posts .swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: 0;
+}
+
+@media (max-width: 1023.98px) {
+  .job-posts {
+    margin-bottom: 17.33vw;
+  }
+  
+  .job-posts .container {
+    width: 100%;
+  }
+  
+  .job-posts h2 {
+    margin-bottom: 6vw;
+    padding-bottom: 4vw;
+    position: relative;
+  }
+
+  .job-posts h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 3px;
+    width: 14.666vw;
+    background-color: #FF6C0E;
+  }
+
+  .job-posts .swiper-container {
+    margin: 0;
+    padding-bottom: 12vw;
+  }
+  
+  .job-posts .swiper-slide {
+    padding: 0 5.6vw;
+  }
+  
+  .job-posts .img {
+    margin-bottom: 8.66vw;
+  }
+  
+  .job-posts .img img {
+    border-radius: 2.66vw;
+  }
+
+  .job-posts .text {
+    padding: 0 12vw;
+  }
+
+  .job-posts .swiper-arrows img {
+    width: 14vw;
+  }
+
+  .job-posts .swiper-arrows .prev {
+    top: 34vw;
+    right: 0;
+  }
+  
+  .job-posts .swiper-arrows .next {
+    top: 34vw;
+    left: 0;
   }
 }

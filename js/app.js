@@ -76,8 +76,8 @@ if (document.querySelector('.project-information-1 .swiper-container')) {
       el: '.project-information-1 .swiper-pagination',
     },
     navigation: {
-      nextEl: '.swiper-arrows .next',
-      prevEl: '.swiper-arrows .prev',
+      nextEl: '.project-information-1 .swiper-arrows .next',
+      prevEl: '.project-information-1 .swiper-arrows .prev',
     },
     slidesPerView: 1.15
   });
@@ -91,6 +91,28 @@ if (document.querySelector('.project-slider .swiper-container')) {
       el: '.project-slider .swiper-pagination',
     },
     navigation: {
+      nextEl: '.project-slider .swiper-arrows .next',
+      prevEl: '.project-slider .swiper-arrows .prev',
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1
+      },
+      1024: {
+        slidesPerView: 4
+      }
+    }
+  });
+}
+
+/* #Job Posts Slider
+  ======================================================= */
+if (document.querySelector('.job-posts .swiper-container')) {
+  new Swiper('.job-posts .swiper-container', {
+    pagination: {
+      el: '.job-posts .swiper-pagination',
+    },
+    navigation: {
       nextEl: '.swiper-arrows .next',
       prevEl: '.swiper-arrows .prev',
     },
@@ -99,7 +121,7 @@ if (document.querySelector('.project-slider .swiper-container')) {
         slidesPerView: 1
       },
       1024: {
-        slidesPerView: 4
+        slidesPerView: 3
       }
     }
   });
