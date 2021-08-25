@@ -1616,12 +1616,14 @@ body {
   margin: -1.5625vw;
 }
 
-.project-card {
+.categories .project-card,
+.project-slider .project-card {
   flex: 0 0 25%;
   padding: 1.5625vw;
 }
 
-.project-card > div {
+.categories .project-card > div,
+.project-slider .project-card > div {
   mask-image: url('../img/category/category-mask.svg');
   -webkit-mask-image: url('../img/category/category-mask.svg');
   mask-size: 100%;
@@ -1633,27 +1635,32 @@ body {
   height: 23.33vw;
 }
 
-.project-card .img img {
+.categories .project-card .img img,
+.project-slider .project-card .img img {
   width: 100%;
   height: 13.43vw;
   object-fit: cover;
   object-position: center;
 }
 
-.project-card .text {
+.categories .project-card .text,
+.project-slider .project-card .text {
   padding: 1.04vw 1.3vw 1.3vw 1.3vw;
 }
 
-.project-card .text h3 {
+.categories .project-card .text h3,
+.project-slider .project-card .text h3 {
   margin-bottom: 2.6vw;
 }
 
-.project-card .text a {
+.categories .project-card .text a,
+.project-slider .project-card .text a {
   display: flex;
   justify-content: space-between;
 }
 
-.project-card .text a img {
+.categories .project-card .text a img,
+.project-slider .project-card .text a img {
   width: 1.04vw;
 }
 
@@ -1745,33 +1752,40 @@ body {
     margin: 0;
   }
   
-  .project-card {
+  .categories .project-card,
+  .project-slider .project-card {
     padding: 0;
   }
 
-  .project-card:not(:last-child) {
+  .categories .project-card:not(:last-child),
+  .project-slider .project-card:not(:last-child) {
     margin-bottom: 6vw;
   }
   
-  .project-card > div {
+  .categories .project-card > div,
+  .project-slider .project-card > div {
     mask-image: url('../img/category/category-mask-mobile.svg');
     -webkit-mask-image: url('../img/category/category-mask-mobile.svg');
     height: 72.666vw;
   }
 
-  .project-card .img img {
+  .categories .project-card .img img,
+  .project-slider .project-card .img img {
     height: 45.65vw;
   }
   
-  .project-card .text {
+  .categories .project-card .text,
+  .project-slider .project-card .text {
     padding: 4.66vw 6vw;
   }
   
-  .project-card .text h3 {
+  .categories .project-card .text h3,
+  .project-slider .project-card .text h3 {
     margin-bottom: 2vw;
   }
   
-  .project-card .text a img {
+  .categories .project-card .text a img,
+  .project-slider .project-card .text a img {
     width: 4.93vw;
   }
   
@@ -2148,5 +2162,396 @@ body {
     top: calc(50% - 4vw);
     left: 0;
     right: auto;
+  }
+}
+
+/* #Job Single
+================================================== */
+.job-single {
+  margin: 2vw 0 7.8vw 0;
+}
+
+.job-single .container {
+  width: 62.5%;
+}
+
+.job-single .back {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0.78vw;
+}
+
+.job-single .back a {
+  display: flex;
+  align-items: center;
+}
+
+.job-single .back img {
+  width: 0.57vw;
+  margin-right: 0.78vw;
+}
+
+.job-single .heading {
+  margin-bottom: 3.125vw;
+}
+
+.job-single h1 {
+  margin-bottom: 2.7vw;
+}
+
+.job-single .heading .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.job-single .heading .info {
+  display: flex;
+  align-items: center;
+}
+
+.job-single .heading .info p {
+  display: flex;
+  align-items: center;
+}
+
+.job-single .heading .info p:not(:last-child) {
+  margin-left: 2.6vw;
+}
+
+.job-single .heading .info img {
+  width: 1.875vw;
+  height: 1.875vw;
+  object-fit: contain;
+  object-position: center;
+  margin-left: .5vw;
+}
+
+.job-single .body h3 {
+  margin-bottom: 1vw;
+}
+
+.job-single .body p {
+  margin-bottom: 3.125vw;
+}
+
+.job-single .body .btn {
+  margin-top: .5vw;
+}
+
+@media (max-width: 1023.98px) {
+  .job-single {
+    margin: 16vw 0;
+    position: relative;
+    padding-bottom: 14.8vw;
+  }
+  
+  .job-single .container {
+    width: 88%;
+  }
+
+  .job-single .back {
+    margin-bottom: 6.66vw;
+  }
+  
+  .job-single .back img {
+    width: 2.26vw;
+    margin-right: 3.33vw;
+  }
+  
+  .job-single .heading {
+    margin-bottom: 12.66vw;
+  }
+  
+  .job-single h1 {
+    margin-bottom: 5.6vw;
+  }
+  
+  .job-single .heading .info p:not(:last-child) {
+    margin-left: 4.66vw;
+  }
+  
+  .job-single .heading .info img {
+    width: 5.6vw;
+    height: 5.6vw;
+    margin-left: 2.4vw;
+  }
+  
+  .job-single .body h3 {
+    margin-bottom: 4.4vw;
+  }
+  
+  .job-single .body p {
+    margin-bottom: 7.33vw;
+  }
+  
+  .job-single .body .btn {
+    margin-top: 1.33vw;
+  }
+
+  .job-single .social {
+    position: absolute;
+    bottom: 0;
+    right: 6%;
+  }
+}
+
+/* #Social
+================================================== */
+.social {
+  display: flex;
+  align-items: center;
+}
+
+.social p {
+  margin-left: 1.21vw;
+}
+
+.social ul {
+  display: flex;
+  align-items: center;
+}
+
+.social li:not(:last-child) {
+  margin-left: .83vw;
+}
+
+.social img {
+  width: 1.71vw;
+  height: 1.4vw;
+  object-fit: contain;
+  object-position: center;
+}
+
+@media (max-width: 1023.98px) {
+  .social p {
+    margin-left: 3vw;
+  }
+  
+  .social li:not(:last-child) {
+    margin-left: 3.33vw;
+  }
+  
+  .social img {
+    width: 6.93vw;
+    height: 5.6vw;
+  }
+}
+
+/* #Jobs Accordion
+================================================== */
+.jobs-accordion .container {
+  width: 62.5%;
+}
+
+.jobs-accordion h2 {
+  margin-bottom: 2.35vw;
+  text-align: center;
+}
+
+.jobs-accordion .collapsible {
+  position: relative;
+  box-shadow: 0 3px 24px rgba(0, 0, 0, .06);
+  border-radius: 1vw;
+  overflow: hidden;
+}
+
+.jobs-accordion .collapsible::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: .83vw;
+  background-color: #117A8C;
+}
+
+.jobs-accordion .collapsible:not(:last-child) {
+  margin-bottom: 1.5vw;
+}
+
+.jobs-accordion .collapse-toggler {
+  padding: 1.1vw 2.76vw 1.1vw 1.82vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.jobs-accordion .collapse-toggler .bottom {
+  display: flex;
+  align-items: center;
+}
+
+.jobs-accordion .collapse-toggler .group {
+  height: 3.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1.3vw;
+}
+
+.jobs-accordion .collapse-toggler .group:not(:last-of-type) {
+  border-left: 1px solid #E5E5E5;
+}
+
+.jobs-accordion .collapse-toggler .group:last-of-type {
+  padding-left: 0;
+  min-width: 8.85vw;
+  justify-content: flex-end;
+}
+
+.jobs-accordion .collapse-toggler .group p,
+.jobs-accordion .collapse-toggler .simbol {
+  display: flex;
+  align-items: center;
+}
+
+.jobs-accordion .collapse-toggler .group p {
+  display: flex;
+  align-items: center;
+}
+
+.jobs-accordion .collapse-toggler .group p:not(:last-child) {
+  margin-left: 2.6vw;
+}
+
+.jobs-accordion .collapse-toggler .group img {
+  width: 1.875vw;
+  height: 1.875vw;
+  object-fit: contain;
+  object-position: center;
+  margin-left: .5vw;
+}
+
+.jobs-accordion .collapse-toggler .simbol .icon img {
+  margin-left: 0;
+  margin-right: .5vw;
+  width: 1vw;
+}
+
+.jobs-accordion .collapse > div {
+  padding: 0 2.76vw 2vw 1.82vw;
+}
+
+.jobs-accordion .collapse h4 {
+  margin-bottom: .83vw;
+}
+
+.jobs-accordion .collapse p {
+  margin-bottom: 2.35vw;
+}
+
+.jobs-accordion .collapse .bottom {
+  border-top: 1px solid #E5E5E5;
+  padding-top: 1.3vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.jobs-accordion .collapse .social {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.jobs-accordion .collapse .social p {
+  margin-left: 0;
+  margin-bottom: .75vw;
+}
+
+@media (max-width: 1023.98px) {
+  .jobs-accordion .container {
+    width: 88%;
+  }
+  
+  .jobs-accordion h2 {
+    margin-bottom: 8.66vw;
+  }
+
+  .jobs-accordion .collapsible {
+    border-radius: 2.66vw;
+  }
+  
+  .jobs-accordion .collapsible::after {
+    width: 2.4vw;
+  }
+  
+  .jobs-accordion .collapsible:not(:last-child) {
+    margin-bottom: 4.4vw;
+  }
+
+  .jobs-accordion .collapse-toggler {
+    padding: 4.4vw 5vw 2.66vw 1vw;
+    display: block;
+  }
+  
+  .jobs-accordion .collapse-toggler .bottom {
+    margin-top: 3.33vw;
+  }
+  
+  .jobs-accordion .collapse-toggler .group {
+    height: 7.33vw;
+    padding: 0 3.33vw;
+  }
+  
+  .jobs-accordion .collapse-toggler .group:not(:last-of-type) {
+    border-left: 1px solid #E5E5E5;
+  }
+
+  .jobs-accordion .collapse-toggler .group:first-of-type {
+    padding-right: 0;
+  }
+  
+  .jobs-accordion .collapse-toggler .group:last-of-type {
+    padding-left: .5vw;
+    flex-grow: 1;
+  }
+  
+  .jobs-accordion .collapse-toggler .group p:not(:last-child) {
+    margin-left: 4.66vw;
+  }
+  
+  .jobs-accordion .collapse-toggler .group img {
+    width: 5.6vw;
+    height: 5.6vw;
+    margin-left: 2.4vw;
+  }
+  
+  .jobs-accordion .collapse-toggler .simbol .icon img {
+    margin-left: 0;
+    margin-right: 1vw;
+    width: 2.93vw;
+  }
+
+  .jobs-accordion .collapse > div {
+    padding: 6vw 5vw 5.33vw 1vw;
+  }
+  
+  .jobs-accordion .collapse h4 {
+    margin-bottom: 3.6vw;
+  }
+  
+  .jobs-accordion .collapse p {
+    margin-bottom: 6.66vw;
+  }
+  
+  .jobs-accordion .collapse .bottom {
+    padding-top:4.66vw;
+    display: block;
+  }
+  
+  .jobs-accordion .collapse .social {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    margin-top: 11.33vw;
+  }
+  
+  .jobs-accordion .collapse .social p {
+    margin-left: 3vw;
+    margin-bottom: 0;
   }
 }
