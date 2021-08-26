@@ -1,9 +1,21 @@
 /* #Header
     ======================================================= */
 
-// Scroll BG Color change
+// Hamburger
 const header = document.querySelector('.header');
+const hamburgerBtn = document.querySelector('.header .hamburger');
+const body = document.querySelector('body');
+const headerLinks = document.querySelector('.header-links');
 
+if (hamburgerBtn) {
+  hamburgerBtn.addEventListener('click', (e) => {
+    hamburgerBtn.classList.toggle('is-active');
+    header.classList.toggle('show-menu');
+    body.classList.toggle('no-scroll');
+  });
+}
+
+// Scroll BG Color change
 if (header) {
   window.addEventListener('scroll', () => {
     if (window.scrollY > 0) {
@@ -129,7 +141,6 @@ if (document.querySelector('.job-posts .swiper-container')) {
 
 /* #Popup
   ======================================================= */
-const body = document.querySelector('body');
 const popups = document.querySelectorAll('.popup');
 const popupTogglers = document.querySelectorAll('.popup-toggler');
 const popupClosers = document.querySelectorAll('.popup-close');
