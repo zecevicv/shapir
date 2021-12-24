@@ -3769,3 +3769,165 @@ body {
     margin-bottom: 3.33vw;
   }
 }
+
+/* #Contact Page
+================================================== */
+.contact-page .banner br {
+  display: none;
+}
+
+.contact-body {
+  padding: 4.68vw 0 7.55vw 0;
+}
+
+.contact-body .container {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact-body .contact-info h2 {
+  margin-bottom: 1vw;
+}
+
+.contact-body .contact-info li {
+  display: flex;
+  align-items: center;
+}
+
+.contact-body .contact-info li:not(:last-child) {
+  margin-bottom: 1vw;
+}
+
+.contact-body .contact-info li img {
+  width: 1.5vw;
+  margin-left: .5vw;
+}
+
+.contact-body .contact-form {
+  flex: 0 0 46.87vw;
+  border-radius: 1vw;
+  box-shadow: 0 3px 24px rgba(0, 0, 0, .06);
+  padding: 2.6vw 3.125vw 3.65vw 3.125vw;
+}
+
+.contact-body .contact-form form {
+  margin: 1.8vw 0 2.6vw 0;
+}
+
+.contact-body .contact-form form * {
+  color: #A8A8A8;
+}
+
+.contact-body label {
+  margin-bottom: .5vw;
+  display: block;
+}
+
+.contact-body textarea {
+  width: 100%;
+  resize: none;
+  border: 2px solid #D4D4D4;
+}
+
+.contact-body input,
+.contact-body select {
+  border: none;
+  border-bottom: 2px solid #D4D4D4;
+  padding-bottom: .75vw;
+  color: #A8A8A8;
+  font-weight: 400;
+}
+
+.contact-body input::placeholder {
+  color: #A8A8A8;
+}
+
+.contact-body select {
+  appearance: none;
+  background-image: url('../img/icons/chevron-down-blue.svg');
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  background-size: 1vw auto;
+}
+
+.contact-body .row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.8vw;
+}
+
+.contact-body .row * {
+  flex: 0 0 45%;
+}
+
+@media (max-width: 1023.98px) {
+  .contact-body {
+    padding: 10.66vw 0 25.6vw 0;
+  }
+  
+  .contact-body .container {
+    width: 80%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: stretch;
+    justify-content: stretch;
+  }
+
+  .contact-body .contact-info {
+    margin-top: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .contact-body .contact-info h2 {
+    margin-bottom: 5.33vw;
+    text-align: center;
+  }
+  
+  .contact-body .contact-info li:not(:last-child) {
+    margin-bottom: 4vw;
+  }
+  
+  .contact-body .contact-info li img {
+    width: 5.33vw;
+    margin-left: 3.33vw;
+  }
+  
+  .contact-body .contact-form {
+    flex: 0;
+    border-radius: 2.66vw;
+    padding: 8vw 6.26vw 12vw 6.26vw;
+  }
+  
+  .contact-body .contact-form form {
+    margin: 8vw 0;
+  }
+  
+  .contact-body label {
+    margin-bottom: 2vw;
+  }
+  
+  .contact-body input,
+  .contact-body select {
+    padding-bottom: 2vw;
+    display: block;
+    width: 100%;
+  }
+  
+  .contact-body select {
+    background-size: 3.33vw auto;
+  }
+  
+  .contact-body .row {
+    display: block;
+    margin-bottom: 3.33vw;
+  }
+  
+  .contact-body .row * {
+    margin-bottom: 3.33vw;
+  }
+}
