@@ -1,7 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="21.199" height="17.043" viewBox="0 0 21.199 17.043">
-  <g id="up-arrow" transform="translate(0.503 16.543) rotate(-90)">
-    <g id="Group_3723" data-name="Group 3723" transform="translate(0)">
-      <path id="Path_3194" data-name="Path 3194" d="M15.866,7.7,8.293.124A.436.436,0,0,0,8.156.032a.417.417,0,0,0-.321,0A.4.4,0,0,0,7.7.124L.123,7.7a.421.421,0,0,0,.595.595L7.574,1.437V19.775a.421.421,0,1,0,.842,0V1.437L15.27,8.291a.421.421,0,1,0,.6-.595Z" fill="#ff6c0e" stroke="#ff6c0e" stroke-width="1"/>
-    </g>
-  </g>
-</svg>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.2 16.98"><defs><style>.cls-1{fill:#ff6c0e;stroke:#ff6c0e;}</style></defs><g id="up-arrow"><g id="Group_3723" data-name="Group 3723"><path id="Path_3194" data-name="Path 3194" class="cls-1" d="M8.2.68.63,8.25a.42.42,0,0,0-.09.14.36.36,0,0,0,0,.32.38.38,0,0,0,.09.13L8.2,16.42a.42.42,0,0,0,.6-.6L1.94,9H20.28a.42.42,0,0,0,0-.84H1.94L8.79,1.27a.41.41,0,0,0,0-.59.43.43,0,0,0-.6,0Z" transform="translate(0 -0.05)"/></g></g></svg>

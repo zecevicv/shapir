@@ -117,6 +117,29 @@ if (document.querySelector('.project-slider .swiper-container')) {
   });
 }
 
+/* #Investment Reports Slider
+  ======================================================= */
+if (document.querySelector('.investment-reports .swiper-container')) {
+  new Swiper('.investment-reports .swiper-container', {
+    loop: true,
+    pagination: {
+      el: '.investment-reports .swiper-pagination',
+    },
+    navigation: {
+      nextEl: '.investment-reports .swiper-arrows .next',
+      prevEl: '.investment-reports .swiper-arrows .prev',
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1
+      },
+      1024: {
+        slidesPerView: 4
+      }
+    }
+  });
+}
+
 /* #Job Posts Slider
   ======================================================= */
 if (document.querySelector('.job-posts .swiper-container')) {
