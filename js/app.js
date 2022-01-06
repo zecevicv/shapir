@@ -83,16 +83,36 @@ homeNumbers.forEach((num) => {
 /* #Project Information 1
   ======================================================= */
 if (document.querySelector('.project-information-1 .swiper-container')) {
-  new Swiper('.project-information-1 .swiper-container', {
-    pagination: {
-      el: '.project-information-1 .swiper-pagination',
-    },
-    navigation: {
-      nextEl: '.project-information-1 .swiper-arrows .next',
-      prevEl: '.project-information-1 .swiper-arrows .prev',
-    },
-    slidesPerView: 1.15
-  });
+  if (document.querySelector('.history .project-information-1')) {
+    new Swiper('.project-information-1 .swiper-container', {
+      pagination: {
+        el: '.project-information-1 .swiper-pagination',
+      },
+      navigation: {
+        nextEl: '.project-information-1 .swiper-arrows .next',
+        prevEl: '.project-information-1 .swiper-arrows .prev',
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1
+        },
+        1024: {
+          slidesPerView: 1.15
+        }
+      }
+    });
+  } else {
+    new Swiper('.project-information-1 .swiper-container', {
+      pagination: {
+        el: '.project-information-1 .swiper-pagination',
+      },
+      navigation: {
+        nextEl: '.project-information-1 .swiper-arrows .next',
+        prevEl: '.project-information-1 .swiper-arrows .prev',
+      },
+      slidesPerView: 1.15
+    });
+  }
 }
 
 /* #Project Slider
