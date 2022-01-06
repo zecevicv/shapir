@@ -4767,7 +4767,7 @@ body {
   height: 3.125vw;
   background-color: #A8A8A8;
   pointer-events:initial;
-  transition: all .4s ease;
+  transition: all .5s ease;
 }
 
 .js .cd-h-timeline__navigation--prev {
@@ -4785,6 +4785,21 @@ body {
 .js .cd-h-timeline__date--selected.cd-h-timeline__date::after {
   background-color: #FF6C0E;
   border-color: #FF6C0E;
+}
+
+.js .cd-h-timeline__date--selected span {
+  opacity: 1;
+  transition: all .3s ease;
+}
+
+@media (min-width: 1024px) {
+  .js .cd-h-timeline__date--selected span {
+    opacity: 0;
+  }
+
+  .js .cd-h-timeline__date--selected.cd-h-timeline__date::before {
+    height: 140%;
+  }
 }
 
 @media (max-width: 1023.98px) {
