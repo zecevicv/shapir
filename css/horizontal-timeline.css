@@ -278,8 +278,8 @@
 @-webkit-keyframes cd-enter-right {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%)
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%)
   }
 
   100% {
@@ -292,8 +292,8 @@
 @keyframes cd-enter-right {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%)
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%)
   }
 
   100% {
@@ -306,8 +306,8 @@
 @-webkit-keyframes cd-enter-left {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%)
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%)
   }
 
   100% {
@@ -320,8 +320,8 @@
 @keyframes cd-enter-left {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%)
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%)
   }
 
   100% {

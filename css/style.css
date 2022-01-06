@@ -4671,7 +4671,7 @@ body {
 }
 
 .js .cd-h-timeline__dates {
-  margin: 0 10vw 0 6vw;
+  margin: 0 6vw 0 10vw;
 }
 
 .js .cd-h-timeline__dates::before,
@@ -4687,7 +4687,7 @@ body {
   left: 0;
   right: auto;
   z-index: 2;
-  width: 6vw;
+  width: 2vw;
   background-color: white;
   height: 100%;
   display: block;
@@ -4696,7 +4696,7 @@ body {
 .js .cd-h-timeline__dates::before {
   left: auto!important;
   right: 0!important;
-  width: 2vw;
+  width: 6vw;
 }
 
 .js .cd-h-timeline__dates ol {
@@ -4771,11 +4771,16 @@ body {
 }
 
 .js .cd-h-timeline__navigation--prev {
-  left: 6.77vw;
+  right: 6.77vw;
+  left: auto;
+  transform: translateY(-50%);
+  top: 1vw;
 }
 
 .js .cd-h-timeline__navigation--next {
-  right: 6.77vw;
+  left: 6.77vw;
+  right: auto;
+  transform: translateY(-50%) rotate(180deg);
 }
 
 .js .cd-h-timeline__date--selected.cd-h-timeline__date::before {
@@ -4789,12 +4794,12 @@ body {
 
 @media (max-width: 1023.98px) {
   .js .cd-h-timeline__navigation--prev {
-    left: 0;
+    right: 0;
+    top: 56%!important;
   }
   
   .js .cd-h-timeline__navigation--next {
-    right: 0;
-    top: 56%!important;
+    left: 0;
   }
 
   .js .cd-h-timeline__dates {

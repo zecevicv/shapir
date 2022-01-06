@@ -46,7 +46,7 @@
 	    	distanceNorm = timeline.eventsMaxDistance;
 	    }
 	    left = left + distanceNorm;
-	    timeline.date[i].setAttribute('style', 'left:' + left+'px');
+	    timeline.date[i].setAttribute('style', 'right:' + left+'px');
 		}
 		
 		// set line/filling line dimensions
@@ -72,10 +72,10 @@
 
 		//swipe on timeline
 		new SwipeContent(self.datesContainer);
-		self.datesContainer.addEventListener('swipeLeft', function(event){
+		self.datesContainer.addEventListener('swipeRight', function(event){
 			translateTimeline(self, 'next');
 		});
-		self.datesContainer.addEventListener('swipeRight', function(event){
+		self.datesContainer.addEventListener('swipeLeft', function(event){
 			translateTimeline(self, 'prev');
 		});
 
@@ -111,7 +111,7 @@
     if( 0 - timeline.translate > timeline.lineLength - containerWidth ) timeline.translate = containerWidth - timeline.lineLength;
     if( timeline.translate > 0 ) timeline.translate = 0;
 
-    timeline.line.style.transform = 'translateX('+timeline.translate+'px)';
+    timeline.line.style.transform = 'translateX('+Math.abs(timeline.translate)+'px)';
     // update the navigation items status (toggle inactive class)
 		(timeline.translate == 0 ) ? Util.addClass(timeline.navigation[0], 'cd-h-timeline__navigation--inactive') : Util.removeClass(timeline.navigation[0], 'cd-h-timeline__navigation--inactive');
 		(timeline.translate == containerWidth - timeline.lineLength ) ? Util.addClass(timeline.navigation[1], 'cd-h-timeline__navigation--inactive') : Util.removeClass(timeline.navigation[1], 'cd-h-timeline__navigation--inactive');
