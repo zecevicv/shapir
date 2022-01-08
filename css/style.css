@@ -4904,7 +4904,7 @@ body {
   align-items: center;
 }
 
-.media-boxes .media-box:nth-child(odd) {
+.media-boxes .media-box:nth-of-type(even) {
   flex-direction: row-reverse;
 }
 
@@ -4932,6 +4932,23 @@ body {
 
 .media-boxes .media-box p {
   line-height: 1.8;
+}
+
+.media-boxes .media-box ul {
+  list-style: initial;
+  padding-right: 17px;
+  line-height: 1.8;
+}
+
+.media-boxes .media-box p:not(:last-child),
+.media-boxes .media-box ul li:not(:last-child) {
+  margin-bottom: 1vw;
+}
+
+@media (min-width: 1024px) {
+  .media-boxes .media-box:nth-of-type(odd) .text {
+    padding-left: 3.65vw;
+  }
 }
 
 @media (max-width: 1023.98px) {
@@ -4967,9 +4984,20 @@ body {
   .media-boxes .media-box h3 {
     margin-bottom: 2vw;
   }
+
+  .media-boxes .media-box h4,
+  .media-boxes .media-box .underline {
+    text-align: center;
+  }
   
-  .media-boxes .media-box p {
+  .media-boxes .media-box p,
+  .media-boxes .media-box ul {
     line-height: 1.2;
+  }
+
+  .media-boxes .media-box p:not(:last-child),
+  .media-boxes .media-box ul li:not(:last-child) {
+    margin-bottom: 3vw;
   }
 }
 
@@ -4983,5 +5011,105 @@ body {
   .content-page .banner .text {
     top: 53% !important;
     transform: translate(-50%, -50%) !important;
+  }
+}
+
+/* #Concrete Page
+================================================== */
+@media (min-width: 1024px) {
+  .concrete-page .media-boxes {
+    padding-top: 4.16vw;
+  }
+}
+
+@media (max-width: 1023.98px) {
+  .content-page .banner br {
+    display: none;
+  }
+  
+  .concrete-page .banner .text {
+    top: 60% !important;
+    transform: translate(-50%, -50%) !important;
+  }
+}
+
+/* #Technical Table
+================================================== */
+.technical-table {
+  padding: 5.2vw 0 0 0;
+}
+
+.technical-table .container {
+  width: 85%;
+}
+
+.technical-table h2 {
+  margin-bottom: 1.3vw;
+}
+
+.technical-table .table {
+  border-radius: 1.5vw;
+  overflow: hidden;
+  box-shadow: 0 3px 24px rgba(0, 0, 0, .1);
+}
+
+.technical-table .table-head {
+  background-color: #1898AE;
+  color: white;
+}
+
+.technical-table .table-body .row:nth-child(even) {
+  background-color: #F6F9F9;
+}
+
+.technical-table .row {
+  display: flex;
+  align-items: center;
+  padding: .85vw 0;
+}
+
+.technical-table .col:first-child {
+  flex: 0 0 60%;
+  padding: 0 3.9vw;
+}
+
+.technical-table .col:last-child {
+  flex: 0 0 40%;
+  padding: 0 0 0 3.9vw;
+}
+
+@media (max-width: 1023.98px) {
+  .technical-table {
+    padding: 10.66vw 0 0 0;
+  }
+  
+  .technical-table .container {
+    width: 90%;
+  }
+  
+  .technical-table h2 {
+    margin-bottom: 4vw;
+  }
+  
+  .technical-table .table {
+    border-radius: 4vw;
+  }
+  
+  .technical-table .row {
+    padding: 1.8vw 0;
+  }
+  
+  .technical-table .col:first-child {
+    flex: 0 0 66%;
+    padding: 0 4vw;
+  }
+
+  .technical-table .table .col:first-child {
+    padding-left: 10vw;
+  }
+  
+  .technical-table .col:last-child {
+    flex: 0 0 34%;
+    padding: 0 0 0 2vw;
   }
 }
