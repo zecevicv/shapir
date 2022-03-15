@@ -86,6 +86,15 @@ body {
   margin-left: 2.6vw;
 }
 
+.header-links a {
+  color: white;
+  transition: all .4s ease;
+}
+
+.header.header-white .header-links a {
+  color: #242424;
+}
+
 .header-links .search a {
   display: flex;
   align-items: center;
