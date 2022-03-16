@@ -6,12 +6,18 @@ const header = document.querySelector('.header');
 const hamburgerBtn = document.querySelector('.header .hamburger');
 const body = document.querySelector('body');
 const headerLinks = document.querySelector('.header-links');
+const headerSearch = document.querySelector('.header .search');
+const headerClose = document.querySelector('.header .close');
 
 if (hamburgerBtn) {
   hamburgerBtn.addEventListener('click', (e) => {
     hamburgerBtn.classList.toggle('is-active');
     header.classList.toggle('show-menu');
     body.classList.toggle('no-scroll');
+
+    if (header.classList.contains('show-search')) {
+      header.classList.remove('show-search');
+    }
   });
 }
 
@@ -30,6 +36,24 @@ if (header) {
   } else {
     header.classList.remove('header-white');
   }
+}
+
+// Search
+if (headerSearch) {
+  headerSearch.addEventListener('click', (e) => {
+    header.classList.add('show-search');
+
+    if (header.classList.contains('show-menu')) {
+      hamburgerBtn.classList.remove('is-active');
+      header.classList.remove('show-menu');
+      body.classList.remove('no-scroll');
+    }
+  });
+
+
+  headerClose.addEventListener('click', (e) => {
+    header.classList.remove('show-search');
+  });
 }
 
 /* #Banner Slider
