@@ -5617,3 +5617,274 @@ body {
     width: .8vw;
   }
 }
+
+/* #Evacuation Page
+================================================== */
+@media (max-width: 1023.98px) {
+  .evacuation-page .banner p br {
+    display: none;
+  }
+
+  .evacuation-page .media-box {
+    text-align: center;
+  }
+}
+
+/* #Power
+================================================== */
+.power {
+  position: relative;
+  margin-top: 7.8vw;
+}
+
+/* Img */
+.power .img img {
+  width: 100%;
+}
+
+/* Text */
+.power .text {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 85%;
+  text-align: center;
+  background-color: white;
+  border-radius: 1.04vw;
+  box-shadow: 0 3px 24px rgba(0, 0, 0, .06);
+  padding: 4.16vw 0 7.8vw 0;
+  z-index: 1;
+}
+
+.power ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 4.16vw;
+  line-height: 1.6;
+}
+
+.power ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 0 0 28vw;
+  padding: 0 2vw;
+  position: relative;
+}
+
+.power ul li:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 70%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 6.25vw;
+  background-color: #DEDEDE;
+}
+
+.power ul img {
+  width: 4vw;
+  height: 2.8vw;
+  object-fit: contain;
+  margin-bottom: 1.5vw;
+}
+
+@media (max-width: 1023.98px) {
+  .power {
+    margin-top: 16.66vw;
+  }
+  
+  /* Text */
+  .power .text {
+    width: 88%;
+    border-radius: 1.04vw;
+    padding: 13.33vw 8vw 16vw 8vw;
+  }
+  
+  .power ul {
+    display: block;
+    margin-top: 16vw;
+    line-height: 1.5;
+  }
+  
+  .power ul li {
+    padding: 0;
+    position: relative;
+  }
+  
+  .power ul li:not(:last-child)::after {
+    left: 50%;
+    top: auto;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 40vw;
+    height: 1px;
+  }
+
+  .power ul li:not(:last-child) {
+    margin-bottom: 10vw;
+    padding-bottom: 10vw;
+  }
+  
+  .power ul img {
+    width: 16.66vw;
+    height: 12vw;
+    margin-bottom: 4vw;
+  }
+}
+
+/* #Steps
+================================================== */
+.steps .container {
+  width: 69.8%;
+}
+
+.steps .heading {
+  text-align: center;
+  margin-bottom: 3.7vw;
+}
+
+.steps .cd-timeline {
+  padding: 0;
+  color: black;
+  overflow: visible;
+  background-color: transparent;
+}
+
+.cd-timeline__container {
+  padding: 0;
+}
+
+.cd-timeline__block {
+  align-items: center;
+  margin-bottom: 2.34vw;
+}
+
+.steps .cd-timeline__content {
+  direction: rtl;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+
+  background-color: transparent;
+  width: auto;
+}
+
+.steps .cd-timeline__date {
+  direction: ltr;
+}
+
+.cd-timeline__img img {
+  width: 100%;
+  height: auto;
+}
+
+.cd-timeline__img--picture {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.cd-timeline__content::before {
+  display: none;
+}
+
+.steps .btn {
+  height: 3.8vw;
+  width: 31.6vw;
+  padding: 0;
+}
+
+.cd-timeline__container::before {
+  display: none;
+}
+
+/* Animation */
+.cd-timeline__img {
+  position: relative;
+}
+
+.cd-timeline__block:not(:last-child) .cd-timeline__img::after {
+  content: '';
+  position: absolute;
+  top: 2.3vw;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4vw;
+  width: 3px;
+  background-color: #117A8C;
+}
+
+@media (min-width: 1024px) {
+  .steps {
+    padding: 4.4vw 0 6vw 0;
+  }
+
+  .cd-timeline__img {
+    width: 2.34vw;
+    height: 2.34vw;
+    margin: 0 1.8vw;
+  }
+}
+
+@media (max-width: 1023.98px) {
+  .steps {
+    padding: 10vw 0;
+  }
+
+  .steps .container {
+    width: 85%;
+  }
+
+  .steps .heading {
+    margin-bottom: 10vw;
+  }
+
+  .steps .cd-timeline {
+    direction: rtl;
+  }
+
+  .cd-timeline__img img {
+    width: 4.66vw;
+  }
+
+  .steps .cd-timeline__content {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+  }
+
+  .cd-timeline__img {
+    width: 6.65vw;
+    height: 6.65vw;
+  }
+
+  .cd-timeline__img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .steps .btn {
+    height: 10vw;
+    padding: 0;
+    width: 74.4vw;
+  }
+
+  .cd-timeline__block {
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 9.33vw;
+  }
+
+  .cd-timeline__content {
+    flex-grow: 0;
+  }
+
+  .cd-timeline__block:not(:last-child) .cd-timeline__img::after {
+    top: 6.3vw;
+    height: 13vw;
+    width: 2px;
+  }
+}
