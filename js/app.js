@@ -269,3 +269,32 @@ AOS.init({
   duration: 800,
   offset: 300,
 });
+
+/* #Line Fill
+    ======================================================= */
+const timelineBlocks = document.querySelectorAll('.cd-timeline__block');
+
+gsap.to('.line-fill-inner', {
+  height: '100%',
+  ease: "none",
+  scrollTrigger: {
+    trigger: '.line-fill',
+    scrub: true,
+    start: "top 60%",
+    end: "bottom 60%"
+  },
+});
+
+timelineBlocks.forEach((block) => {
+  const img = block.querySelector('svg');
+
+  gsap.to(img, {
+    backgroundColor: '#FF6C0E',
+    scrollTrigger: {
+      trigger: block,
+      scrub: true,
+      start: "top 60%",
+      end: "bottom 60%"
+    },
+  });
+});
