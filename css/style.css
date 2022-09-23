@@ -1772,6 +1772,19 @@ body {
   width: 100%;
 }
 
+.home-career .swiper-container {
+  direction: ltr;
+}
+
+.home-career .swiper-wrapper {
+  -webkit-transition-timing-function:linear!important; 
+  -o-transition-timing-function:linear!important;
+  transition-timing-function:linear!important; 
+  cursor: default;
+  user-select: none;
+  align-items: center;
+}
+
 .home-career .person {
   mask-size: 100%;
   -webkit-mask-size: 100%;
@@ -1779,15 +1792,93 @@ body {
   -webkit-mask-repeat: no-repeat;
   mask-position: center;
   -webkit-mask-position: center;
-  position: absolute;
-  right: 0;
-  transform: translateX(18vw);
   backface-visibility: hidden;
-
-  animation: move 20s linear infinite;
+  margin-bottom: 1vw;
 }
 
-.home-career .person:nth-child(1) {
+/* Style 1 */
+.home-career .style-1 .person:nth-child(1) {
+  width: 13.63vw;
+  height: 12.42vw;
+  mask-image: url(../img/home/person-15-mask.svg);
+  -webkit-mask-image: url(../img/home/person-15-mask.svg);
+}
+
+.home-career .style-1 .person:nth-child(2) {
+  width: 12.71vw;
+  height: 11.59vw;
+  mask-image: url(../img/home/person-10-mask.svg);
+  -webkit-mask-image: url(../img/home/person-10-mask.svg);
+}
+
+.home-career .style-1 .person:nth-child(3) {
+  width: 12.71vw;
+  height: 11.59vw;
+  mask-image: url(../img/home/person-10-mask.svg);
+  -webkit-mask-image: url(../img/home/person-10-mask.svg);
+}
+
+/* Style 2 */
+.home-career .style-2 {
+  padding-top: 2vw;
+}
+
+.home-career .style-2 .person:nth-child(1) {
+  width: 13.63vw;
+  height: 12.42vw;
+  mask-image: url(../img/home/person-15-mask.svg);
+  -webkit-mask-image: url(../img/home/person-15-mask.svg);
+}
+
+.home-career .style-2 .person:nth-child(2) {
+  width: 12.71vw;
+  height: 11.59vw;
+  mask-image: url(../img/home/person-10-mask.svg);
+  -webkit-mask-image: url(../img/home/person-10-mask.svg);
+}
+
+.home-career .style-2 .person:nth-child(3) {
+  width: 12.71vw;
+  height: 11.59vw;
+  mask-image: url(../img/home/person-10-mask.svg);
+  -webkit-mask-image: url(../img/home/person-10-mask.svg);
+}
+
+/* Style 3 */
+.home-career .style-3 {
+  padding-top: 5vw;
+}
+
+.home-career .style-3 .person:nth-child(1) {
+  width: 13.63vw;
+  height: 12.42vw;
+  mask-image: url(../img/home/person-15-mask.svg);
+  -webkit-mask-image: url(../img/home/person-15-mask.svg);
+}
+
+.home-career .style-3 .person:nth-child(2) {
+  width: 12.71vw;
+  height: 15.61vw;
+  mask-image: url(../img/home/person-12-mask.svg);
+  -webkit-mask-image: url(../img/home/person-12-mask.svg);
+}
+
+.home-career .style-3 .person:nth-child(3) {
+  width: 12.71vw;
+  height: 11.59vw;
+  mask-image: url(../img/home/person-10-mask.svg);
+  -webkit-mask-image: url(../img/home/person-10-mask.svg);
+}
+
+.home-career .person img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Old Image Styles */
+/* .home-career .person:nth-child(1) {
   width: 11.81vw;
   height: 8.43vw;
   mask-image: url('../img/home/person-1-mask.svg');
@@ -1905,65 +1996,27 @@ body {
   mask-image: url('../img/home/person-15-mask.svg');
   -webkit-mask-image: url('../img/home/person-15-mask.svg');
   top: 19.37vw;
-}
-
-.home-career .person:nth-child(13),
-.home-career .person:nth-child(12) {
-  animation-delay: 2.65s;
-}
-
-.home-career .person:nth-child(11),
-.home-career .person:nth-child(10) {
-  animation-delay: 5.25s;
-}
-
-.home-career .person:nth-child(9),
-.home-career .person:nth-child(8) {
-  animation-delay: 7.9s;
-}
-
-.home-career .person:nth-child(7) {
-  animation-delay: 11.4s;
-}
-
-.home-career .person:nth-child(6) {
-  animation-delay: 10.5s;
-}
-
-.home-career .person:nth-child(5) {
-  animation-delay: 10.5s;
-}
-
-.home-career .person:nth-child(4) {
-  animation-delay: 13.9s;
-}
-
-.home-career .person:nth-child(3) {
-  animation-delay: 13.9s;
-}
-
-.home-career .person:nth-child(2),
-.home-career .person:nth-child(1) {
-  animation-delay: 16.5s;
-}
-
-.home-career .person img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-@keyframes move {
-  to {
-    transform: translateX(-100vw);
-  }
-}
+} */
 
 @media (max-width: 1023.98px) {
   .home-career .persons {
     margin-bottom: 20vw;
-    transform: scale(1.5);
+  }
+  
+  .home-career .person {
+    transform: scale(2)!important;
+  }
+  
+  .home-career .person:not(:last-child) {
+    margin-bottom: 15vw;
+  }
+
+  .home-career .person:last-child {
+    margin-bottom: 8vw;
+  }
+
+  .home-career .person:first-child {
+    margin-top: 6vw;
   }
 }
 

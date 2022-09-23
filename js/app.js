@@ -272,29 +272,58 @@ AOS.init({
 
 /* #Line Fill
     ======================================================= */
-const timelineBlocks = document.querySelectorAll('.cd-timeline__block');
+if (document.querySelector('.cd-timeline')) {
+  const timelineBlocks = document.querySelectorAll('.cd-timeline__block');
 
-gsap.to('.line-fill-inner', {
-  height: '100%',
-  ease: "none",
-  scrollTrigger: {
-    trigger: '.line-fill',
-    scrub: true,
-    start: "top 60%",
-    end: "bottom 60%"
-  },
-});
-
-timelineBlocks.forEach((block) => {
-  const img = block.querySelector('svg');
-
-  gsap.to(img, {
-    backgroundColor: '#FF6C0E',
+  gsap.to('.line-fill-inner', {
+    height: '100%',
+    ease: "none",
     scrollTrigger: {
-      trigger: block,
+      trigger: '.line-fill',
       scrub: true,
       start: "top 60%",
       end: "bottom 60%"
     },
   });
-});
+
+  timelineBlocks.forEach((block) => {
+    const img = block.querySelector('svg');
+
+    gsap.to(img, {
+      backgroundColor: '#FF6C0E',
+      scrollTrigger: {
+        trigger: block,
+        scrub: true,
+        start: "top 60%",
+        end: "bottom 60%"
+      },
+    });
+  });
+}
+
+/* #Person Slider
+  ======================================================= */
+if (document.querySelector('.home-career .swiper-container')) {
+  new Swiper(".home-career .swiper-container", {
+    loop: true,
+    freeMode: true,
+    spaceBetween: 0,
+    grabCursor: true,
+    loop: true,
+    autoplay: {
+      delay: 1
+    },
+    allowTouchMove: false,
+    freeMode: true,
+    speed: 4000,
+    freeModeMomentum: false,
+    breakpoints: {
+      0: {
+        slidesPerView: 3.5,
+      },
+      1024: {
+        slidesPerView: 6.5,
+      }
+    }
+  });
+}
